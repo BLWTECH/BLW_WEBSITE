@@ -1,34 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>BLUE LIGHT WAVES</title>
-</head>
-<body> 
-  <div class="jumbotron text-center">
-    <h1 id="title">BLUE  LIGHT  WAVES </h1>
-    <p>We’re a digital marketing firm that works with small businesses that want to improve their online presence.</p> 
-    <p>You can contact us through 232078986868  email :  bluelightwavestech@gmail.com</p>
-  </div>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Blue Light Waves</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contents</a></li>
-            </ul>
-        </div>
-    </nav> 
-    
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/main.js" defer></script>
+    <script type="module" src="./router/index.js"></script>
+    <link rel="stylesheet" href="/assets/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      referrerpolicy="no-referrer"
+    />
+    <title>Blue Light Waves - Technologies is the first thing</title>
+  </head>
+  <body class="flex flex-col items-center px-7">
+    <!-- Header -->
+    <header
+      class="flex items-center justify-between w-full p-3 border-b-2 border-gray-100 bg-opacity-50 backdrop-blur-lg"
+    >
+      <div>
+        <p class="text-2xl font-bold">
+          BLW<span class="text-blue-900">.tech</span>
+        </p>
+      </div>
 
+      <!-- Burger Menu for Mobile -->
+      <div id="open-burger" class="block laptop:hidden">
+        <button id="burger-menu" class="text-3xl">
+          <i class="ri-menu-line"></i>
+        </button>
+      </div>
+
+      <!-- Nav Links -->
+      <nav class="hidden laptop:block">
+        <ul class="flex gap-5">
+          <li class="relative group flex gap-1">
+            <a class="font-semibold">Solution</a>
+            <i class="ri-arrow-down-s-line rotate-0 transition-transform"></i>
+            <div
+              class="absolute left-0 top-full border border-gray-300 w-96 rounded-xl h-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 bg-gray-50 p-4 shadow-xl mt-7"
+            >
+              <p class="text-sm">Solutions we provide...</p>
+            </div>
+          </li>
+          <li class="relative group flex gap-1">
+            <a class="font-semibold">Developers</a>
+            <i class="ri-arrow-down-s-line rotate-0 transition-transform"></i>
+            <div
+              class="absolute left-0 top-full border border-gray-300 w-96 rounded-xl h-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 bg-gray-50 p-4 shadow-xl mt-7"
+            >
+              <p class="text-sm">Our Developers...</p>
+            </div>
+          </li>
+          <li class="relative group flex gap-1">
+            <a class="font-semibold">Services</a>
+            <i class="ri-arrow-down-s-line rotate-0 transition-transform"></i>
+            <div
+              class="absolute left-0 top-full border border-gray-300 w-96 rounded-xl h-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 bg-gray-50 p-4 shadow-xl mt-7"
+            >
+              <p class="text-sm">Services we provide...</p>
+            </div>
+          </li>
+          <li class="relative group flex gap-1">
+            <a href="/blog" class="font-semibold">Blog</a>
+          </li>
+          <li class="flex gap-1">
+            <a href="/pricing" class="font-semibold">Pricing</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="hidden laptop:flex gap-7">
+        <button class="bg-blue-700 text-white px-3 py-2 rounded-lg">
+          Get Started
+        </button>
+        <button>Login</button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="hidden fixed inset-0 bg-white bg-opacity-90 z-50 p-5">
+      <div class="flex justify-end mb-5">
+        <button id="close-menu" class="text-3xl">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+      <ul class="flex flex-col gap-5">
+        <li class="relative group flex gap-1">
+          <a href="#" class="font-semibold">Solution</a>
+          <i class="ri-arrow-down-s-line rotate-0 transition-transform"></i>
+        </li>
+        <li class="relative group flex gap-1">
+          <a href="#" class="font-semibold">Developers</a>
+          <i class="ri-arrow-down-s-line rotate-0 transition-transform"></i>
+        </li>
+        <li class="relative group flex gap-1">
+          <a href="#" class="font-semibold">Services</a>
+          <i class="ri-arrow-down-s-line rotate-0 transition-transform"></i>
+        </li>
+        <li class="relative group flex gap-1">
+          <a href="#" class="font-semibold">Blog</a>
+        </li>
+        <li class="flex gap-1">
+          <a href="#" class="font-semibold">Pricing</a>
+        </li>
+        <li class="flex gap-1">
+          <button class="bg-blue-700 text-white px-3 py-2 rounded-lg w-full">
+            Get Started
+          </button>
+          <button class="w-full">Login</button>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="app"></main>
+
+    <!-- Footer -->
+    <footer></footer>
+
+    <script>
+      const burgerMenu = document.getElementById('burger-menu');
+      const closeMenu = document.getElementById('close-menu');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const open_burger = document.getElementById('open-burger');
+
+      burgerMenu.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        open_burger.classList.toggle('hidden');
+      });
+
+      closeMenu.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        open_burger.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.rotate-0 {
+  transform: rotate(0deg);
+}
+
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
+li:hover .rotate-0 {
+  transform: rotate(180deg);
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px); 
+}

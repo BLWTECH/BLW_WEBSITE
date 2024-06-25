@@ -8,7 +8,13 @@
 ```bash
 cd BLW_WEBSITE
 ```
-#### To install dependency
+
+### Create your own branch
+```bash
+git checkout -b name_of_brahch   # git checkout -b abdullah-changes
+```
+
+### To install dependency
 ---
 ```bash
 bun install

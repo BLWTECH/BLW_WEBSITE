@@ -12,7 +12,7 @@ const routes = {
 const rootDiv = document.getElementById('app');
 
 const render = (route) => {
-  const page = routes[route] || PageNotFound;  // Fallback to HomePage if route is not found
+  const page = routes[route] || PageNotFound;  // Fallback to NoTFound if route is not found
   rootDiv.innerHTML = page();
 };
 
